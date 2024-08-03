@@ -40,7 +40,7 @@ class Main:
             print(err)
     def main(self) :
         if not self.id :
-            self.ids  =  self.ids[1:100]
+            # self.ids  =  self.ids[1:100]
             print(self.ids)
             with Pool(self.threades) as p : 
                 arr = p.map(self.check,self.ids)
@@ -58,4 +58,6 @@ if __name__ == "__main__" :
     m = Main()
 
     print(m.main())
+
+
 
